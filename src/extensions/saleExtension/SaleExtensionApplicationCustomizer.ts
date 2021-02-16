@@ -72,10 +72,10 @@ export default class SaleExtensionApplicationCustomizer
               <h4 class="${styles.imgtext}">Welcome ${userName}</h4>
             </div>
             <ul class="${styles.navArea}">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="https://spsalesproject.sharepoint.com/sites/Jaguar">HOME</a></li>
+              <li><a href="https://spsalesproject.sharepoint.com/sites/Jaguar/SitePages/Orderpage.aspx">ORDER NOW</a></li>
+              <li><a href="https://spsalesproject.sharepoint.com/sites/Jaguar/Lists/Products/AllItems.aspx">VEHICLES</a></li>
+              <li><a href="https://spsalesproject.sharepoint.com/sites/Jaguar/Lists/Customers/AllItems.aspx">CUSTOMERS</a></li>
             </ul>
           </div>
            `;

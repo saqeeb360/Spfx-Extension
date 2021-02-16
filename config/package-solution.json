@@ -3,7 +3,7 @@
   "solution": {
     "name": "saleextension-client-side-solution",
     "id": "962a1b62-20f3-4dc7-9e5c-2ee92b4cc963",
-    "version": "1.0.0.0",
+    "version": "1.0.2.1",
     "includeClientSideAssets": true,
     "isDomainIsolated": false,
     "developer": {
