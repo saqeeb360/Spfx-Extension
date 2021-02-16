@@ -1,0 +1,29 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://spsalesproject.sharepoint.com/sites/Jaguar",
+      "customActions": {
+        "04df24e0-21f3-4dd1-ab77-938949274522": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "Welcome!"
+          }
+        }
+      }
+    },
+    "saleExtension": {
+      "pageUrl": "https://spsalesproject.sharepoint.com/sites/Jaguar",
+      "customActions": {
+        "04df24e0-21f3-4dd1-ab77-938949274522": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "Welcome!"
+          }
+        }
+      }
+    }
+  }
+}
