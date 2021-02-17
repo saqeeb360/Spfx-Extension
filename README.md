@@ -1,5 +1,5 @@
 # saleextension
-![Preview](https://raw.githubusercontent.com/saqeeb360/Spfx-Extension/master/spfx-extension.gif =830x)
+<img src="https://raw.githubusercontent.com/saqeeb360/Spfx-Extension/master/spfx-extension.gif" alt="" width="800px" />
 ## Summary
 
 Short summary on functionality and used technologies.
@@ -25,7 +25,7 @@ Short summary on functionality and used technologies.
 
 Solution|Author(s)
 --------|---------
-folder name | Author details (name, company, twitter alias with link)
+Spfx-Extension | Saqeeb - Programmer Analyst in Cognizant
 
 ## Version history
 
