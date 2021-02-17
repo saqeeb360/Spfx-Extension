@@ -1,5 +1,5 @@
 # saleextension
-![Preview](https://raw.githubusercontent.com/saqeeb360/Spfx-Extension/master/spfx-extension.gif)
+![Preview](https://raw.githubusercontent.com/saqeeb360/Spfx-Extension/master/spfx-extension.gif =830x)
 ## Summary
 
 Short summary on functionality and used technologies.
