@@ -51,7 +51,8 @@
       text-decoration: none;
       font-size: 18px;
       letter-spacing: 1px;
-      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
       display: block;
       padding: 5px 1em;
       margin-right: 50px;
@@ -63,6 +64,78 @@
     }
   }
 }
+
+.bottom1 {
+  height: 46px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #010a19;
+  align-items: center;
+  h3 {
+    font-family: Trebuchet MS, Lucida Sans Unicode, Lucida Grande, Lucida Sans,
+      Arial, sans-serif;
+    color: #dcdcdc;
+  }
+  .socialcontainer {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    height: inherit;
+    li {
+      position: relative;
+      width: 70px;
+      a{
+        display: block;
+        text-decoration: none;
+        color: black;
+        margin-right: 20px;
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        top: 3px;
+      }
+      .facebook {
+        background: url("./assets/fblogodark.png");
+        background-repeat: round;
+      }
+      .facebook:hover {
+        background: url("./assets/fblogoblue.png");
+        background-repeat: round;
+        width: 46px;
+        height: 46px;
+        top: 0px;
+        left: -5px;
+      }
+      
+      .twitter {
+        background: url("./assets/twitterdark.png");
+        background-repeat: round;
+      }
+      .twitter:hover {
+        background: url("./assets/twitter.png");
+        background-repeat: round;
+        width: 46px;
+        height: 46px;
+        top: 0px;
+        left: -5px;
+      }
+      .insta {
+        background: url("./assets/instadark.png");
+        background-repeat: round;
+      }
+      .insta:hover {
+        background: url("./assets/insta.png");
+        background-repeat: round;
+        width: 46px;
+        height: 46px;
+        top: 0px;
+        left: -5px;
+      }
+      
+    }
+  }
+}
+
 // .app {
 //   box-sizing: border-box;
 //   margin: 0;

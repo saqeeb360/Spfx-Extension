@@ -45,11 +45,12 @@ export default class SaleExtensionApplicationCustomizer
     // let script:any = '<script>document.getElementsByClassName("root-42")[0].style["display"] = "none" </script>';
     const logoUrl: any = require('./assets/images.png');
     const banner: any = require('./assets/banner.gif');
-    let userName : any = this.context.pageContext.user.displayName; 
-    if(!userName){
+    let userName: any = this.context.pageContext.user.displayName;
+    if (!userName) {
       userName = "Guest";
     }
     console.log(banner);
+    // Html header starts here
     if (!this._topPlaceholder) {
       this._topPlaceholder = this.context.placeholderProvider.tryCreateContent(
         PlaceholderName.Top,
@@ -79,6 +80,44 @@ export default class SaleExtensionApplicationCustomizer
             </ul>
           </div>
            `;
+        }
+      }
+    }
+    // Html footer starts here
+    if (!this._bottomPlaceholder) {
+      this._bottomPlaceholder = this.context.placeholderProvider.tryCreateContent(
+        PlaceholderName.Bottom,
+        { onDispose: this._onDispose }
+      );
+      // The extension should not assume that the expected placeholder is available.
+      if (!this._bottomPlaceholder) {
+        console.error("The expected placeholder (Bottom) was not found.");
+        return;
+      }
+
+      if (this.properties) {
+        let bottomString: string = "© Jaguar Land Rover 2021";
+        if (!bottomString) {
+          bottomString = "© Jaguar Land Rover 2021";
+        }
+
+        if (this._bottomPlaceholder.domElement) {
+          this._bottomPlaceholder.domElement.innerHTML = `
+          <div class="${styles.bottom1}">
+            <h3>© Copyright Jaguar Land Rover 2021</h3>
+            <ul class="${styles.socialcontainer}">
+              <li>
+                <a href="#" class="${styles.facebook}"></a>
+              </li>
+              <li>
+                <a href="#" class="${styles.twitter}"></a>
+              </li>
+              <li>
+                <a href="#" class="${styles.insta}"></a>
+              </li>
+            </ul>
+            </div>
+        `;
         }
       }
     }
